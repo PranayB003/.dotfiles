@@ -15,3 +15,6 @@ sh ./utils/setup_symlinks.sh $PWD/config ~
 
 # Copy preferences for apps
 sh ./utils/setup_app_preferences.sh
+
+# Install vim theme
+sh ./utils/install_vim_theme.sh

@@ -117,4 +117,8 @@ noremap gp "*p
 noremap gy "*y
 
 " set color scheme
-color slate
+try
+  color github_dark_dimmed
+catch
+  color slate
+endtry
