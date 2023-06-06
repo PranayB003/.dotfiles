@@ -1,0 +1,3 @@
+#!/bin/bash
+print $TERTIARY copying app preferences...
+cp ./Library/Preferences/* ~/Library/Preferences/

@@ -1,0 +1,5 @@
+# Global gitignore
+*.swp
+.DS_Store
+*.idea
+

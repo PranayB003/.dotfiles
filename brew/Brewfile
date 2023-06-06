@@ -1,0 +1,29 @@
+tap "homebrew/bundle"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Modern replacement for 'ls'
+brew "exa"
+# Manage multiple Node.js versions
+brew "nvm"
+# Terminal multiplexer
+brew "tmux"
+# Voice and text chat software
+cask "discord"
+# Git client focusing on productivity
+cask "gitkraken"
+# Web browser
+cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Collaboration platform for API development
+cask "postman"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# System monitor for the menu bar
+cask "stats"
+# Open-source code editor
+cask "visual-studio-code"
+# Video communication and virtual meeting platform
+cask "zoom"
