@@ -11,4 +11,4 @@ sh ./utils/get_brew.sh
 sh ./utils/install_packages.sh
 
 # Make symlinks for all dotfiles
-#TODO
+sh ./utils/setup_symlinks.sh $PWD/config ~
