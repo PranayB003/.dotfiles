@@ -12,3 +12,6 @@ sh ./utils/install_packages.sh
 
 # Make symlinks for all dotfiles
 sh ./utils/setup_symlinks.sh $PWD/config ~
+
+# Copy preferences for apps
+sh ./utils/setup_app_preferences.sh
