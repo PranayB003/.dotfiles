@@ -1,3 +1,4 @@
+#!/bin/bash
 print $SECONDARY "\nVerifying xcode command line tools installation"
 
 if ! xcode-select -p 2>/dev/null; then
