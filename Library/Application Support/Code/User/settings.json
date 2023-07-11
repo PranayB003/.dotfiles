@@ -1,0 +1,63 @@
+{
+    // Prettier
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Code Runner
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "php": "C:\\php\\php.exe",
+        "python": "cd $dir && python3 $fileName",
+        "perl": "perl",
+        "ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
+        "go": "go run",
+        "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && make $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && make $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.enableAppInsights": false,
+    // Miscellaneous
+    "workbench.startupEditor": "none",
+    "diffEditor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground3": "#008080",
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "editor.wordWrap": "wordWrapColumn",
+    // Code Snap
+    "codesnap.shutterAction": "copy",
+    "editor.linkedEditing": true,
+    "editor.tabSize": 2,
+    // Material Icons for VSCode
+    "material-icon-theme.activeIconPack": "react_redux",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+}
