@@ -10,6 +10,9 @@ sh ./utils/get_brew.sh
 # Install Homebrew formulae and casks
 sh ./utils/install_packages.sh
 
+# Install custom fonts (e.g. Nerd Fonts which have icons)
+sh ./utils/get_fonts.sh
+
 # Make symlinks for all dotfiles
 sh ./utils/setup_symlinks.sh $PWD/config ~
 
