@@ -1,5 +1,5 @@
 -- load vim configuration
-vim.cmd.source("~/.vimrc")
+vim.cmd.source("~/.vim/vimrc")
 -- override some config options from vimrc
 vim.cmd.set("noshowmode")
 

@@ -114,7 +114,7 @@ noremap gp "*p
 noremap gy "*y
 
 "  Source the config file again
-nnoremap <Leader>r :source ~/.vimrc<CR>
+nnoremap <Leader>r :source ~/.vim/vimrc<CR>
 
 "  Set color scheme
 try
