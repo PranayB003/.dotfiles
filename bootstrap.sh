@@ -8,7 +8,7 @@ sh ./utils/get_xcode.sh
 sh ./utils/get_brew.sh
 
 # Install Homebrew formulae and casks
-sh ./utils/install_packages.sh
+sh ./utils/install_brew_packages.sh
 
 # Install custom fonts (e.g. Nerd Fonts which have icons)
 sh ./utils/get_fonts.sh
