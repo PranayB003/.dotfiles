@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'christoomey/vim-tmux-navigator'
+  use 'RyanMillerC/better-vim-tmux-resizer'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
