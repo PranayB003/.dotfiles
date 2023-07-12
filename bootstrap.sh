@@ -20,4 +20,4 @@ sh ./utils/setup_symlinks.sh $PWD/config ~
 sh ./utils/setup_app_preferences.sh
 
 # Install vim theme
-sh ./utils/install_vim_theme.sh
+sh ./utils/install_misc_packages.sh
