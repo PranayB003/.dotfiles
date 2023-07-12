@@ -1,10 +1,3 @@
-# Cisco Anyconnect
-path+=('/opt/cisco/anyconnect/bin')
-alias vpnconnect='vpn -s connect myaccess-india.oraclevpn.com < ~/.oracleVPNCredentials'
-alias vc='vpnconnect'
-alias vd='vpn disconnect'
-alias vs='vpn state'
-
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
