@@ -117,8 +117,10 @@ noremap gy "*y
 nnoremap <Leader>r :source ~/.vim/vimrc<CR>
 
 "  Set color scheme
-try
-  color github_dark_dimmed
-catch
-  color slate
-endtry
+"  uncomment this block to make github_dark_dimed the default
+"  try
+"    color github_dark_dimmed
+"  catch
+"    color slate
+"  endtry
+color slate
