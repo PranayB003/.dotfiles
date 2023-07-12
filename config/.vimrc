@@ -113,6 +113,9 @@ endif
 noremap gp "*p
 noremap gy "*y
 
+"  Source the config file again
+nnoremap <Leader>r :source ~/.vimrc<CR>
+
 "  Set color scheme
 try
   color github_dark_dimmed
