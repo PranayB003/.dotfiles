@@ -9,4 +9,10 @@ require("nvim-tree").setup({
   filters = {
     custom = { '^.git$' },
   },
+  tab = {
+    sync = {
+      open = true,
+      close = true,
+    }
+  },
 })
