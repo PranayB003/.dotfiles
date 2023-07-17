@@ -17,3 +17,4 @@ notify() {
 }
 alias -g cat=bat
 alias ls=exa
+alias -g grep='grep --color=auto'
