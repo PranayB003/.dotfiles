@@ -24,9 +24,9 @@ notify() {
 gcdate() { # use a specific commit date and author date while making a commit
   if [ -n "$1" ]
   then
-    GIT_COMMITTER_DATE="$1" git commit --date "$1";
+    GIT_COMMITTER_DATE="$1" git commit --date "$1" $@[2,$#];
   else
-    echo Usage: "gcdate <date-time>";
+    echo 'Usage: gcdate "date-time" [other-git-commit-options]';
     echo Example: gcdate '"Mon 20 Aug 2018 20:19:19 IST"';
   fi
 }
