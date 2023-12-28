@@ -1,11 +1,8 @@
 #!/bin/bash
-mkdir Fonts
-cd Fonts
 
-curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
-unzip Hack.zip -d ./Hack
-cp -R ./Hack/ ~/Library/Fonts/
-
-cd ..
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.tar.xz
+sudo tar -C /usr/local/share/fonts -xvf Hack.tar.xz
+cd ~/.dotfiles
+rm Hack.tar.xz
 
 
