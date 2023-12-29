@@ -19,4 +19,4 @@ source ./assets/colors.sh
 ./utils/setup_symlinks.sh $PWD/config ~
 
 # Change default login shell to zsh
-sudo chsh -s zsh
+./utils/change_login_shell.sh zsh
