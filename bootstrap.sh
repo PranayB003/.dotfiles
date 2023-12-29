@@ -20,3 +20,6 @@ source ./assets/colors.sh
 
 # Change default login shell to zsh
 ./utils/change_login_shell.sh zsh
+
+# Fix locale problem (if any)
+./utils/reconfigure_locales.sh
