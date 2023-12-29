@@ -1,5 +1,5 @@
 #!/bin/bash
-echo $SECONDARY "\nVerifying xcode command line tools installation"
+echo $SECONDARY "Verifying xcode command line tools installation"
 
 if ! xcode-select -p 2>/dev/null; then
   # Install the xcode command line tools - xcode-select is the eaisest way.
