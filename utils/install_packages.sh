@@ -18,7 +18,7 @@ ln -sf /usr/bin/batcat ~/.local/bin/bat
 
 # Java
 echo -e $PRIMARY Installing Java $CLEAR
-sudo apt install default-jre default-jdk
+sudo apt install default-jre default-jdk maven
 
 # Golang
 echo -e $PRIMARY Installing Golang $CLEAR
