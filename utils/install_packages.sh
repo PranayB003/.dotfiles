@@ -48,3 +48,7 @@ make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.l
 make install
 cd ~/.dotfiles
 nvim --version
+
+# Rust
+echo -e $PRIMARY Installing Rust $CLEAR
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh

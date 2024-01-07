@@ -6,6 +6,9 @@ export GOROOT=/usr/local/go
 export GOPATH=~/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# Rust
+source "$HOME/.cargo/env"
+
 # Java and Maven (may need to re-check and tweak this on every install) 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export MAVEN_HOME=/usr/share/maven
