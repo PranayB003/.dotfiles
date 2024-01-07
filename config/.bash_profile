@@ -5,3 +5,5 @@ PS1="\[\e[32m\][\[\e[m\]\[\e[1;31m\]\u\[\e[m\]\[\e[1;33m\]@\[\e[m\]\[\e[1;31m\]\
 VISUAL=$(which vim)
 EDITOR=$(which vi)
 
+# Rust
+source "$HOME/.cargo/env"

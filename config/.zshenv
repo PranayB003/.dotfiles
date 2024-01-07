@@ -16,3 +16,5 @@ alias g++=g++-13
 alias c++=c++-13
 alias cpp=cpp-13
 
+# Rust
+source "$HOME/.cargo/env"
