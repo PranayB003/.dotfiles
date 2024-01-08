@@ -1,6 +1,6 @@
 "  Appearance.
-"  Put a   message in the last line of the window to see which
-"  mode (Insert,"  Replace, Visual) you are in.
+"  Put a message in the last line of the window to see which
+"  mode (Insert, Replace, Visual) you are in.
 set showmode
 
 "  Show the line number
@@ -28,13 +28,12 @@ syntax enable
 
 "  Editing.
 "  Number of spaces that a <Tab> in the file counts for. Setting
-"  'tabstop' to"  any other value than 8 can make your file appear wrong
+"  'tabstop' to any other value than 8 can make your file appear wrong
 "  when printing it. For" solving this isssue :set tabstop=8.
-set tabstop=2
+set tabstop=8 softtabstop=0
 
 "  Number of spaces to use for each step of (auto) indent.
-set shiftwidth=2
-set expandtab
+set shiftwidth=4 smarttab
 
 "  Use the appropriate number of spaces to insert a <Tab>.
 set expandtab
@@ -60,18 +59,8 @@ vnoremap < <<CR>gv
 "  Notes: <C-R><C-O>* means insert literally the text from register 
 inoremap <M-Insert> <Esc>:set paste<CR>i<C-R><C-O>*<Esc>:set nopaste<CR>i
 
-"  Clipboard.
-"  Was vim compiled with clipboard support?
-"if has('clipboard')
-	" Use * register (selection register) for operations which would normally
-	" go to the " register (unnamed register), example: yank, delete,change, etc.
-  "	set clipboard=unnamed
-"else
-"	echo "Vim compiled without clipboard option."
-"endif
-
 "  Search.
-"  Search case-sensitive only if there is    a capital letter in    the search
+"  Search case-sensitive only if there is a capital letter in the search
 "  expression, otherwise ignore case.
 set ignorecase
 set smartcase
@@ -92,16 +81,12 @@ filetype on
 "  Load plugin files for specific file types.
 filetype plugin on
 
-" Editing to 79 columns.
-set textwidth=79
-
-"  Highlight columns that go over the 79 column.
-"highlight OverLength term=reverse cterm=reverse ctermfg=1 guifg=White guibg=Red
-"match OverLength /\%80v.\+/
+"  Editing to 79 columns.
+"  set textwidth=79
 
 "  Highlight column 80 in grey
-set colorcolumn=80                                                      
-highlight ColorColumn ctermbg=8 guibg=white
+"  set colorcolumn=80                                                      
+"  highlight ColorColumn ctermbg=8 guibg=white
 
 "  Highlight current line
 if exists("&cursorline")

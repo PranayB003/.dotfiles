@@ -10,6 +10,7 @@ PROMPT='%B%F{yellow}%*%f%b %F{32}%~%f %F{red}${vcs_info_msg_0_}%f%# '
 alias -g cat=bat
 alias ls=exa
 alias -g grep='grep --color=auto'
+alias tmux='tmux -u'
 
 # "alert" alias for long running commands. Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1
