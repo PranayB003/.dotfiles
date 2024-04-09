@@ -30,7 +30,7 @@ syntax enable
 "  Number of spaces that a <Tab> in the file counts for. Setting
 "  'tabstop' to any other value than 8 can make your file appear wrong
 "  when printing it. For" solving this isssue :set tabstop=8.
-set tabstop=8 softtabstop=0
+set tabstop=8 softtabstop=4
 
 "  Number of spaces to use for each step of (auto) indent.
 set shiftwidth=4 smarttab

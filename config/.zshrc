@@ -11,6 +11,7 @@ alias -g cat=bat
 alias ls=exa
 alias -g grep='grep --color=auto'
 alias tmux='tmux -u'
+alias pip='pip3.11'
 
 # "alert" alias for long running commands. Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1
