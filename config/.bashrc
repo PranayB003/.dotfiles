@@ -1,6 +1,3 @@
-# Apply bashrc config to all new terminals
-source /etc/skel/bashrc-DEFAULT
-
 # PATH
 PATH=~/.local/bin:$PATH
 
