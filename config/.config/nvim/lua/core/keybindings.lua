@@ -1,7 +1,7 @@
 -- toggle the tree viewer
 vim.keymap.set("n", "<Leader>tt", ":NvimTreeFindFileToggle<CR>")
--- focus the tree viewer
-vim.keymap.set("n", "<Leader>tf", ":NvimTreeOpen | NvimTreeFocus<CR>")
+-- Open Telescope
+vim.keymap.set("n", "<Leader>tl", ":Telescope<CR>")
 
 -- move to the next/previous tab
 vim.keymap.set("n", "<Esc><Tab>", ":tabnext<CR>")
