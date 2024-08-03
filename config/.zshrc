@@ -33,3 +33,5 @@ gcdate() { # use a specific commit date and author date while making a commit
     echo Example: gcdate '"Mon 20 Aug 2018 20:19:19 IST"';
   fi
 }
+
+eval "$(starship init zsh)"
