@@ -1,52 +1,83 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+#palette = 'gruvbox_dark'
+#format = """
+#[](color_bg0)\
+#$os\
+#$username\
+#[](fg:color_bg0 bg:color_bg1)\
+#$directory\
+#[](fg:color_bg1 bg:color_bg2)\
+#$git_branch\
+#$git_status\
+#${env_var.ADE_VIEW_NAME}\
+#[](fg:color_bg2 bg:color_bg3)\
+#$hostname\
+#[](fg:color_bg3 bg:color_bg5)\
+#$conda\
+#[](fg:color_bg5 bg:color_bg4)\
+#$time\
+#$cmd_duration\
+#[ ](fg:color_bg4)\
+#$line_break$character"""
+
+palette = 'dracula'
 format = """
-[](color_orange)\
 $os\
 $username\
-[](bg:color_yellow fg:color_orange)\
 $directory\
-[](fg:color_yellow bg:color_aqua)\
 $git_branch\
 $git_status\
 ${env_var.ADE_VIEW_NAME}\
-[](fg:color_aqua bg:color_blue)\
 $hostname\
-[](fg:color_blue bg:color_bg3)\
 $conda\
-[](fg:color_bg3 bg:color_bg1)\
 $time\
-[ ](fg:color_bg1)\
+$cmd_duration\
 $line_break$character"""
 
-palette = 'gruvbox_dark'
-
 [palettes.gruvbox_dark]
+color_bg0 = '#ff6e00'
 color_fg0 = '#fbf1c7'
-color_bg1 = '#3c3836'
-color_bg3 = '#665c54'
-color_blue = '#458588'
-color_aqua = '#689d6a'
-color_green = '#98971a'
-color_orange = '#d65d0e'
+color_bg1 = '#ffa400'
+color_fg1 = '#fbf1c7'
+color_bg2 = '#98971a'
+color_fg2 = '#fbf1c7'
+color_bg3 = '#458588'
+color_fg3 = '#fbf1c7'
+color_bg4 = '#3c3836'
+color_fg4 = '#fbf1c7'
+color_bg5 = '#665c54'
+color_fg5 = '#fbf1c7'
 color_purple = '#b16286'
 color_red = '#cc241d'
-color_yellow = '#d79921'
+color_green = '#98971a'
+color_yellow = '#ffa400'
 
-[env_var.ADE_VIEW_NAME]
-disabled = false
-description = 'The name of the current ADE view (if any)'
-style = "bg:color_aqua"
-format = '[( $env_value )]($style)'
-
-[hostname]
-disabled = false
-style = "bg:color_blue"
-format = "[ $ssh_symbol$hostname ]($style)"
+[palettes.dracula]
+color_bg0 = "#282828"
+color_fg0 = "#8be9fd"
+color_bg1 = "#282828"
+color_fg1 = "#50fa7b"
+color_bg2 = "#282828"
+color_fg2 = "#ff5555"
+color_bg3 = "#282828"
+color_fg3 = "#bd93f9"
+color_bg4 = "#282828"
+color_fg4 = "#f1fa8c"
+color_bg5 = "#282828"
+color_fg5 = "#ffb86c"
+color_purple = '#b16286'
+color_red = "#ff5555"
+color_green = "#50fa7b"
+color_yellow = '#ffa400'
+current_line = "#44475a"
+foreground = "#f8f8f2"
+comment = "#6272a4"
 
 [os]
 disabled = true
-style = "bg:color_orange fg:color_fg0"
+style = "bg:color_bg0 fg:color_fg0"
+format = '[ $symbol]($style)'
 
 [os.symbols]
 Windows = "󰍲"
@@ -73,12 +104,12 @@ OracleLinux = "⛁"
 
 [username]
 show_always = true
-style_user = "bg:color_orange fg:color_fg0"
-style_root = "bg:color_orange fg:color_fg0"
+style_user = "bg:color_bg0 fg:color_fg0"
+style_root = "bg:color_bg0 fg:color_fg0"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_fg0 bg:color_yellow"
+style = "fg:color_fg1 bg:color_bg1"
 format = "[ $path ]($style)"
 truncation_length = 1
 truncation_symbol = "…/"
@@ -92,23 +123,39 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+style = "bg:color_bg2"
+format = '[[ $symbol $branch ](fg:color_fg2 bg:color_bg2)]($style)'
 
 [git_status]
-style = "bg:color_aqua"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
+style = "bg:color_bg2"
+format = '[[($all_status$ahead_behind )](fg:color_fg2 bg:color_bg2)]($style)'
+
+[env_var.ADE_VIEW_NAME]
+disabled = false
+description = 'The name of the current ADE view (if any)'
+style = "fg:color_fg2 bg:color_bg2"
+format = '[( $env_value )]($style)'
+
+[hostname]
+disabled = false
+style = "fg:color_fg3 bg:color_bg3"
+format = "[ $ssh_symbol$hostname ]($style)"
 
 [conda]
-style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+style = "fg:color_fg5 bg:color_bg5"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg5)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
 utc_time_offset = '5.5'
-style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+style = "bg:color_bg4"
+format = '[[  $time ](fg:color_fg4 bg:color_bg4)]($style)'
+
+[cmd_duration]
+disabled = false
+style = "bold fg:yellow bg:color_bg4"
+format = "[last command: $duration ]($style)"
 
 [line_break]
 disabled = false
