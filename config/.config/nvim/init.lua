@@ -8,4 +8,3 @@ vim.cmd.set("noshowmode")
 
 require("keybindings")
 require("plugins")
-require("plugin_config")
