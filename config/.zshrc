@@ -34,4 +34,13 @@ gcdate() { # use a specific commit date and author date while making a commit
   fi
 }
 
+# Make backspace work normally in vi mode
+bindkey -v '^?' backward-delete-char
+# Bind ^P and ^N to move through command history in vi command mode
+bindkey -M vicmd '^P' up-line-or-history
+bindkey -M vicmd '^N' down-line-or-history
+# Bind ^P and ^N to move through command history in vi insert mode
+bindkey -M viins '^P' up-line-or-history
+bindkey -M viins '^N' down-line-or-history
+
 eval "$(starship init zsh)"

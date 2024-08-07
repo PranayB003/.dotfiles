@@ -8,10 +8,11 @@ then
 fi
 
 alias grep='grep --color'
-alias clera=clear
-alias ls='ls --color=auto'
+alias ls=lsd
+alias cat=bat
 if ! [ -z ${SRCHOME+x} ] 
 then
   alias sqlplus='rlwrap -c sqlplus'
 fi
 
+eval "$(starship init bash)"

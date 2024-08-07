@@ -16,5 +16,9 @@ alias g++=g++-13
 alias c++=c++-13
 alias cpp=cpp-13
 
+# Environment variables for git
+export VISUAL=$(which nvim)
+export EDITOR=$(which nvim)
+
 # Rust
 #source "$HOME/.cargo/env"
