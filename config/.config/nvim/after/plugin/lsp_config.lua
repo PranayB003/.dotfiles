@@ -5,9 +5,9 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     'clangd',
-    'cmake',
+--    'cmake',
     'lua_ls',
-    'pylsp',
+--    'pylsp',
   },
   handlers = {
     -- The default handler will be called for each installed server that doesn't 
