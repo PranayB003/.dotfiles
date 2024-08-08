@@ -2,4 +2,4 @@
 	email = 66739544+PranayB003@users.noreply.github.com
 	name = Pranay
 [core]
-	excludesfile = /Users/pranayborgohain/.gitignore
+	excludesfile = $HOME/.gitignore
