@@ -5,14 +5,5 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
-require("nvim-tree").setup({
-  filters = {
-    custom = { '^.git$' },
-  },
-  tab = {
-    sync = {
-      open = true,
-      close = true,
-    }
-  },
-})
+-- setup using custom configs
+require("nvim-tree").setup({view = {relativenumber = true}})
