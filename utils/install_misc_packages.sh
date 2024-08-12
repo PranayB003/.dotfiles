@@ -5,7 +5,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ~/.config/tmux/plugins/tpm/bin/install_plugins
 
 # Install plugins for vim
-git clone git@github.com:christoomey/vim-tmux-navigator.git ~/.vim/pack/plugins/start/vim-tmux-navigator
+git clone https://github.com/christoomey/vim-tmux-navigator.git ~/.vim/pack/plugins/start/vim-tmux-navigator
 
 # Install themes for vim
 git clone https://github.com/akiicat/vim-github-theme.git
