@@ -85,6 +85,9 @@ set hlsearch
 "  Use <CR> in  normal mode to clear the search pattern.
 nnoremap <CR> :let @/ = ""<CR>:echo "search pattern cleared"<CR>
 
+" Only apply the following mapping in the quickfix window
+autocmd FileType qf nnoremap <buffer> <CR> <CR>
+
 "  Enable file type detection.
 filetype on
 
@@ -124,3 +127,7 @@ nnoremap <Leader>r :source ~/.vim/vimrc<CR>
 "    color slate
 "  endtry
 color slate
+
+if has("cscope")
+  set csprg=mycscope2.pl
+endif
