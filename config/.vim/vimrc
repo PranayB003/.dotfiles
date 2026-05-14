@@ -22,10 +22,6 @@ set showcmd
 "   you can use 'set background=dark'.
 set background=dark
 
-"  Turn on syntax highlighting.
-syntax on
-syntax enable
-
 "  Editing.
 "  Number of spaces that a <Tab> in the file counts for. Setting
 "  'tabstop' to"  any other value than 8 can make your file appear wrong
@@ -46,9 +42,6 @@ set backspace=indent,eol,start
 set autoindent 
 set smartindent
 set cindent
-
-"  Load the indent file for specific file types.
-filetype indent on
 
 "  When indenting in visual mode, don't lose the selection. Shift
 "  lines right/left and start visual mode with the same mode and the same
@@ -88,13 +81,6 @@ nnoremap <CR> :let @/ = ""<CR>:echo "search pattern cleared"<CR>
 " Only apply the following mapping in the quickfix window
 autocmd FileType qf nnoremap <buffer> <CR> <CR>
 
-"  Enable file type detection.
-filetype on
-
-"  Plugins
-"  Load plugin files for specific file types.
-filetype plugin on
-
 " Editing to 79 columns.
 set textwidth=79
 
@@ -116,20 +102,36 @@ endif
 noremap gp "*p
 noremap gy "*y
 
-"  Source the config file again
-nnoremap <Leader>r :source ~/.vim/vimrc<CR>
-
-"  Set color scheme
-"  uncomment this block to make github_dark_dimed the default
-"  try
-"    color github_dark_dimmed
-"  catch
-"    color slate
-"  endtry
-color slate
-
 if has("cscope")
   set csprg=mycscope2.pl
+endif
+
+if !has("nvim")
+  "  Source the config file again
+  nnoremap <Leader>r :source ~/.vim/vimrc<CR>
+
+  "  Turn on syntax highlighting.
+  syntax on
+  syntax enable
+
+  "  Enable file type detection.
+  filetype on
+
+  "  Load the indent file for specific file types.
+  filetype indent on
+
+  "  Plugins
+  "  Load plugin files for specific file types.
+  filetype plugin on
+
+  "  Set color scheme
+  "  uncomment this block to make github_dark_dimed the default
+  "  try
+  "    color github_dark_dimmed
+  "  catch
+  "    color slate
+  "  endtry
+  color slate
 endif
 
 " nedit <name>: open a file by name (like ncd)

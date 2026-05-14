@@ -1,5 +1,7 @@
 # Apply bashrc config to all new terminals
 source /etc/skel/bashrc-DEFAULT
+# setup proxy to allow downloads from github and other places
+source /usr/local/remote/oci/noarch/admin/scripts/Proxy-Config-set.sh
 
 # PATH
 PATH=~/.local/bin:$PATH
