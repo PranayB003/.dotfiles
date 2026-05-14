@@ -131,3 +131,16 @@ color slate
 if has("cscope")
   set csprg=mycscope2.pl
 endif
+
+" nedit <name>: open a file by name (like ncd)
+" open the source file by name
+function! Nedit(var1)
+  let fname = a:var1
+  let path = system('grep ' . fname . '$ $NDE_VOB_ROOT/rdbms/utl/cscope.files | sed "s|^/ade/.*/oracle/|$NDE_VOB_ROOT/|g"')
+  if ! empty(path)
+    exec 'edit ' . path
+  else
+    echo '!Cannot find file ' . fname . '!!'
+  endif
+endfunction
+command! -nargs=1 Nedit call Nedit(<q-args>)
